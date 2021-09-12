@@ -60,7 +60,7 @@ int main()
     //注册lua回调函数
     lua_register(pLuaState, LUA_CALLBACK_FILTER_RES_PROC, FilterResProc);
     
-    std::string strLuaPath = "../../lua/filter.lua";
+    std::string strLuaPath = "lua/filter.lua";
 
     int nLuaRet = 0;
     nLuaRet = luaL_dofile(pLuaState, strLuaPath.c_str());
