@@ -23,7 +23,7 @@ CC=g++
 TARGET=luafilter
 $(TARGET): $(OBJ)     
     #@mkdir -p output/   #创建一个目录，用于存放已编译的目标  
-	#echo "$(BINPATH)/$(TARGET)"
+	mkdir -p $(BINPATH)
 	$(CC) $(OBJ) $(INCLUDES) $(LIB_PATH) $(LIBS) -o $(BINPATH)/$(TARGET)   
 	#.$(VERSION)  
 
