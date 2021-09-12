@@ -11,7 +11,7 @@ SOURCE=$(wildcard ./service/src/*.cpp)
 #SOURCE=$(wildcard ./service/src/luafilter.cpp)
 OBJ=$(patsubst %.c, %.o, $(SOURCE))
 LIB_PATH=-L./lua_code/src 
-LIBS=-llua -llua -lm -ldl
+LIBS=-llua -lm -ldl
 
 BINPATH=./bin
 
